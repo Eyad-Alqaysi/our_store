@@ -1,0 +1,48 @@
+/* static/myapp/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    min-height: 400px;
+    background: #fff;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+h1, h2 {
+    color: #333;
+}

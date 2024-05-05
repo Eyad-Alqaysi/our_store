@@ -1,0 +1,12 @@
+<!-- developer_list.html -->
+{% extends 'base_generic.html' %}
+
+{% block title %}All Developers{% endblock %}
+{% block content %}
+  <h2>All Developers</h2>
+  <ul>
+    {% for developer in object_list %}
+      <li>{{ developer.name }} - Founded: {{ developer.founded_date }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

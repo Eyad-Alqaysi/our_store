@@ -1,0 +1,9 @@
+<!-- developer_detail.html -->
+{% extends 'base_generic.html' %}
+
+{% block title %}{{ object.name }}{% endblock %}
+{% block content %}
+  <h2>{{ object.name }}</h2>
+  <p><strong>Founded:</strong> {{ object.founded_date }}</p>
+  <p><strong>Headquarters:</strong> {{ object.headquarters }}</p>
+{% endblock %}

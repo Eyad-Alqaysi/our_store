@@ -1,0 +1,11 @@
+<!-- game_detail.html -->
+{% extends 'base_generic.html' %}
+
+{% block title %}{{ object.title }}{% endblock %}
+{% block content %}
+  <h2>{{ object.title }}</h2>
+  <p><strong>Developer:</strong> {{ object.developer.name }}</p>
+  <p><strong>Summary:</strong> {{ object.summary }}</p>
+  <p><strong>Genre:</strong> {{ object.genre.all|join:", " }}</p>
+  <p><strong>Release Date:</strong> {{ object.release_date }}</p>
+{% endblock %}

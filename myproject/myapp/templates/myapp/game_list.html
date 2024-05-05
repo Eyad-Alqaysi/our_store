@@ -1,0 +1,14 @@
+<!-- game_list.html -->
+{% extends 'base_generic.html' %}
+
+{% block title %}All Games{% endblock %}
+{% block content %}
+  <h2>All Games</h2>
+  <ul>
+    {% for game in object_list %}
+      <li>
+        <a href="{% url 'game_detail' game.pk %}">{{ game.title }}</a> by {{ game.developer.name }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!-- base_generic.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Game Catalog{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+    </head>
+<body>
+    <header>
+        <h1>{% block header %}Game Catalog{% endblock %}</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'games' %}">Games</a></li>
+            <li><a href="{% url 'developers' %}">Developers</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Copyright © 2024 Game Catalog</p>
+    </footer>
+</body>
+</html>
